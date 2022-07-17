@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "io.github.alkyaly",
+    "id": "aaa",
+    "version": "${version}",
+    "name": "",
+    "description": "",
+    "authors": [
+      "alkyaLy"
+    ],
+    "contact": {
+      "sources": "https://github.com/alkyaly/modid",
+      "issues": "https://github.com/alkyaly/modid/issues"
+    },
+    "license": "MIT",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "environment": "*",
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.18.2"
+      }
+    ]
+  },
+  "mixin": [
+    "aaa.mixins.json"
+  ]
+}
