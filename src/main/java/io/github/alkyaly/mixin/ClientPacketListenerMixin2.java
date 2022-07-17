@@ -4,7 +4,7 @@ import org.spongepowered.asm.mixin.Mixin;
 
 import net.minecraft.client.multiplayer.ClientPacketListener;
 
-@Mixin(ClientPacketListener.class)
+@Mixin(value = ClientPacketListener.class, priority = 1)
 public class ClientPacketListenerMixin2 {
     //@Inject(
     //        method = "handleAddEntity",
